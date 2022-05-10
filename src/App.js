@@ -54,7 +54,7 @@ function App() {
 
         if (kysleyId !== "") {
 
-            setHaluttuKysley(kyselytData.[0].[kysleyId])
+            setHaluttuKysley(kyselytData[0][kysleyId])
 
             setTulostaKysely(true)
         } else {
