@@ -24,9 +24,9 @@ export default function Kysely2() {
   };
 
   return (
-    <div class="form-container">
+    <div class="form-container text-color">
         <FormControl>
-            <FormLabel id="demo-radio-buttons-group-label">1. Valitse vastaus</FormLabel>
+            <FormLabel id="demo-radio-buttons-group-label" >1. Valitse vastaus</FormLabel>
             <RadioGroup
                 aria-labelledby="demo-radio-buttons-group-label"
                 defaultValue=""
@@ -34,7 +34,7 @@ export default function Kysely2() {
                 value={kysymys1}
                 onChange={handleChange}
             >
-                <FormControlLabel value="1a" control={<Radio />} label="a" />
+                <FormControlLabel class="text-color" value="1a" control={<Radio />} label="a" />
                 <FormControlLabel value="1b" control={<Radio />} label="b" />
                 <FormControlLabel value="1c" control={<Radio />} label="c" />
             </RadioGroup>
@@ -46,8 +46,9 @@ export default function Kysely2() {
                 name="radio-buttons-group"
                 value={kysymys2}
                 onChange={handleChange2}
+                class="container"
             >
-                <FormControlLabel value="2a" control={<Radio />} label="a" />
+                <FormControlLabel value="2a" type="radio" name="radio" control={<Radio />} label="a" class="form-radio-button text-color"/>
                 <FormControlLabel value="2b" control={<Radio />} label="b" />
                 <FormControlLabel value="2c" control={<Radio />} label="c" />
             </RadioGroup>

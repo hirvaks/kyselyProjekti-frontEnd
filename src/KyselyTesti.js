@@ -52,6 +52,41 @@ export class KyselyListElement extends React.Component {
           Lähetä
         </button>
 
+        <label class="form-checkbox-label text-color">
+  <input class="form-checkbox" type="checkbox" name="checkbox" />
+  Berries
+</label>
+
+<label class="form-checkbox-label text-color">
+  <input class="form-checkbox" type="checkbox" name="checkbox-checked" checked />
+  Cherries
+</label>
+
+<label class="form-checkbox-label text-color">
+  <input class="form-checkbox" type="checkbox" name="checkbox" />
+  Muu, Mikä?<div >
+  <input class="form-field text-color" type="text" placeholder="Kirjoita vastauksesi tähän"/>
+</div>
+</label>
+
+
+
+<label class="container text-color">One
+  <input type="radio" checked="checked" name="radio"/> 
+  <span class="checkmark"></span>
+</label>
+
+<label class="container text-color">Two
+  <input type="radio"  checked="checked" name="radio"/> 
+  <span class="checkmark"></span>
+</label>
+
+<label class="container">Three
+  <input type="radio" name="radio" checked="checked"/>
+  <span class="checkmark"></span>
+</label>
+
+
       
 
         </form>
