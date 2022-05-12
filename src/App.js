@@ -12,34 +12,6 @@ function App() {
 
     const [haluttuKysley, setHaluttuKysley] = useState('')
 
-    /*
-    Logitus jätetty esimerkiksi JSON sisällön käsittelyyn kehityksen ajaksi
-
-    console.log(`\n\n### kyselyiden määrä: ${kyselytData[0].length}`)
-    console.log("### kaikki kyselyt:")
-    console.log(kyselytData[0])
-
-    console.log("\n\n### 1. kysely:")
-    console.log(kyselytData[0].[0].linkki)
-    console.log(kyselytData[0].[0])
-
-    console.log(`\n\n### kyselyn kysymysten määrä: ${kyselytData[0].[0].kysymykset.length}`)
-    console.log("### kyselyn kaikki kysymykset:")
-    console.log(kyselytData[0].[0].kysymykset)
-
-    console.log("\n\n### 1. kysymys:")
-    console.log(kyselytData[0].[0].kysymykset[0].kysymys)
-
-    console.log(`\n\n### vaihtoehtojen määrä: ${kyselytData[0].[0].kysymykset[0].vaihtoehdot.length}`)
-    console.log("### kaikki vaihtoehdot")
-    console.log(kyselytData[0].[0].kysymykset[0].vaihtoehdot)
-    console.log(kyselytData[0].[0].kysymykset[0].vaihtoehdot[0])
-    console.log(kyselytData[0].[0].kysymykset[0].vaihtoehdot[1])
-    console.log(kyselytData[0].[0].kysymykset[0].vaihtoehdot[2])
-    console.log("--------------------------------------------------")
-    */
-
-
     const inputChanged = (event) => {
         setKysleyId(event.target.value)
     }
