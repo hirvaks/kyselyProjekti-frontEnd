@@ -16,23 +16,21 @@ Pelkistetty esimerkki:
 
 function Text(props) {
 
+    console.log(`\n### Text.js ### saatu kysely: ${props.kysely.nimi}`)
+
     const submit = () => {
         alert('Tulosten näyttäminen vaiheessa')
     }
 
     const [valittuKysely] = useState(props.kysely)
     const [kysymykset] = useState(valittuKysely.kysymykset)
-
-    console.log(`### Text.js ### saatu kysely: ${valittuKysely.nimi}`)
-
      const handleChange = (kysymys, index) => (event) => {
-        console.log("\n")
-        console.log('--------------------------------------------------')
-        console.log(`########### kysymys id: ${kysymys.id}`)
-        console.log(`########### kysymys: ${kysymys.kysymys}`)
-        console.log(`########### vastaus: ${event.target.value}`)
+        console.log('\n--------------------------------------------------')
+        console.log(`# kysymys id: ${kysymys.id}`)
+        console.log(`# kysymys: ${kysymys.kysymys}`)
+        console.log(`# vastaus: ${event.target.value}`)
         kysymykset[index].vastaus = event.target.value
-        console.log(`########### vastaus tallennettu`)
+        console.log(`#vastaus tallennettu`)
         console.log('--------------------------------------------------')
         
     }
