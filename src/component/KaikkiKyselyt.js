@@ -21,14 +21,14 @@ function KaikkiKyselyt(props) {
 
     if (tulostaKysely === false) {
         return (
-            <>{
+            <div >{
                 props.kyselyt.map((kysely, i) => (
                     <div key={i}>
                         <p>
                             <button name={kysely.nimi} id={i} onClick={haeKysely}>{kysely.nimi}</button>
                         </p>
                     </div>))}
-            </>
+            </div>
         )
     } else {
         return (

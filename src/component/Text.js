@@ -6,6 +6,7 @@ import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 import { Button } from "@mui/material";
 
+
 /*
 Tarvittava importti tekstikenttään radio vaihtoehdossa:
 import Input from '@mui/material/Input';
@@ -37,14 +38,15 @@ function Text(props) {
 
     return (
         <>
-            <h2>{valittuKysely.nimi}</h2>
+            <h2 class="form-text ">{valittuKysely.nimi}</h2>
 
             <FormControl>
                 {
                     kysymykset.map((k, i) => (
-                        <div key={k.id}>
+                        <div key={k.id} >
                             <FormLabel key={`FormLabelKey${i}`} id={i}>{k.kysymys}</FormLabel>
                             <RadioGroup
+                            
                                 key={`RadioGroupKey${i}`}
                                 id={i}
                                 aria-labelledby="demo-radio-buttons-group-label"
